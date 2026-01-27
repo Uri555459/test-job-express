@@ -1,41 +1,3 @@
-# 1. Registration:
-
-data = {
-"name": "Ivan",
-"bio": "Ivan Ivan Ivan",
-"dateOfBirth": "2024-12-24T06:22:33.444Z",
-"email": "t@t.ru",
-
-<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
-
-"password": "12345678",
-"role": "ADMIN",
-"userStatus": true
-}
-http://localhost:4200/api/auth/register
-
-2. Login:
-   data = {
-   "email": "t@t.ru",
-   "password": "12345678"
-   }
-   http://localhost:4200/api/auth/login
-3. Get one user:
-   нужен jwt токен
-   method GET передать ID пользователя userId: number
-   http://localhost:4200/api/users/<userId>
-4. Geo all users:
-   нужен jwt токен
-   http://localhost:4200/api/users
-5. Block user:
-   нужен jwt токен
-   method PATCH передать ID пользователя userId: number
-   http://localhost:4200/api/users/block/<userId>
-6. Unlock user:
-   нужен jwt токен
-   method PATCH передать ID пользователя userId: number
-   http://localhost:4200/api/users/unlock/<userId>
-
 ```markdown
 # 🚀 test-job-express REST API
 
@@ -45,10 +7,6 @@ http://localhost:4200/api/auth/register
 http://localhost:4200/api
 
 ````
-
-## 📋 Эндпоинты
-
-### 🔐 Авторизация
 
 #### 1. Регистрация пользователя
 ```http
